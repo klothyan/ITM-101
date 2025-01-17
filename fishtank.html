@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 5px;
+            width: 90%;
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .collage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<audio autoplay loop>
+    <source src="LOTUSWATERS+WATERSOUNDS-[AudioTrimmer.com].mp3" type="audio/mpeg">
+  </audio>
+<body>
+    <h1>-𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝚝𝚘 𝙺𝚢𝚕𝚎𝚒𝚐𝚑'𝚜 𝙵𝚒𝚜𝚑𝚝𝚊𝚗𝚔-</h1>
+    <div class="collage">
+        <!-- Add your image URLs below -->
+        <img src="download.jpg" alt="Image 1">
+        <img src="download (1).jpg" alt="Image 2">
+        <img src="download (2).jpg" alt="Image 3">
+        <img src="download (3).jpg" alt="Image 4">
+        <img src="download (4).jpg" alt="Image 5">
+    </div>
+</body>
+</html>
